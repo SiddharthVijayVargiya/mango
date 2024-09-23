@@ -1,0 +1,563 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the header */
+header {
+    background-color: hsl(39, 100%, 50%); /* Mango color */
+    padding: 20px 0;
+    border-bottom: 1px solid hsl(39, 100%, 70%); /* Slightly lighter mango color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 50px;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text for contrast */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hsl(39, 100%, 30%); /* Darker shade of mango color */
+}
+
+/* Search bar styling */
+.search-bar {
+    margin-left: auto; /* Align search bar to the right */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid hsl(39, 100%, 70%); /* Light mango border color */
+    border-radius: 4px;
+}
+
+.search-bar button[type="submit"] {
+    padding: 8px 16px;
+    background-color: hsl(39, 100%, 50%); /* Mango color */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: hsl(40, 82%, 2%); /* Slightly darker mango color */
+}
+
+/* User cart icons */
+.user-cart a {
+    margin-left: 15px;
+    color: hsl(0, 100%, 1%); /* Mango color for icons */
+}
+
+.user-cart a:hover {
+    color: hsl(38, 80%, 2%); /* Darker shade of mango color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .user-cart {
+        margin-top: 15px;
+    }
+}
+/* Apply styles to the hero section */
+.hero {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the hero content */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading */
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph */
+.hero-content p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+/* Apply styles to the varieties section */
+.varieties {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the container */
+.varieties .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading */
+.varieties h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the mango cards */
+.mango-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the mango image */
+.mango-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style the mango name */
+.mango-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Style the mango description */
+.mango-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Style the "Buy Now" button */
+.mango-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+.mango-card .btn:hover {
+    background-color: #0056b3;
+}
+/* Apply styles to the farmers section */
+.farmers {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the container */
+.farmers .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading */
+.farmers h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the farmer profiles */
+.farmer-profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the farmer image */
+.farmer-profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style the farmer name */
+.farmer-profile h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Style the farmer description */
+.farmer-profile p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Style the "View Profile" button */
+.farmer-profile .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+.farmer-profile .btn:hover {
+    background-color: #0056b3;
+}
+/* Apply styles to the global section */
+.global {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the container */
+.global .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading */
+.global h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the mango cards */
+.mango-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the mango image */
+.mango-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style the mango name */
+.mango-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Style the mango description */
+.mango-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Style the "Buy Now" button */
+.mango-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+.mango-card .btn:hover {
+    background-color: #0056b3;
+}
+/* Apply styles to the community section */
+.community {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the container */
+.community .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading */
+.community h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the community content */
+.community-content {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Style the buttons */
+.community-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Add hover effect to buttons */
+.community-content .btn:hover {
+    background-color: #0056b3;
+}
+/* Mango Heritage & Education Section */
+.heritage {
+    background-color: #FEE715;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .heritage h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .heritage p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .heritage .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+/* styles.css */
+/* Testimonial Section Styles */
+.testimonials {
+    background-color: #F9F9F9;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the footer */
+footer {
+    background-color: hsl(39, 100%, 50%); /* Mango color */
+    color: #fff;
+    padding: 40px 0;
+    border-top: 1px solid hsl(39, 100%, 40%); /* Slightly darker mango color */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: hsl(39, 100%, 70%); /* Lighter shade of mango color */
+}
+
+/* Contact information */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin-right: 15px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Newsletter section */
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.newsletter button[type="submit"] {
+    padding: 8px 16px;
+    background-color: hsl(39, 100%, 40%); /* Darker mango color */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: hsl(39, 100%, 30%); /* Even darker mango color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info, .newsletter {
+        margin-top: 20px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input[type="email"] {
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+}
+  

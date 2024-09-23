@@ -1,0 +1,23 @@
+/* Style for text inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #3CBC8D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional: Add hover effect to the submit button */
+button[type="submit"]:hover {
+    background-color: #2C8A6F;
+}

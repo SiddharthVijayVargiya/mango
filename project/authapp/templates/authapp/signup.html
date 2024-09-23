@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<link rel ="stylesheet" href ="{% static 'authapp/css/signup.css' %}">
+<body>
+    <h1>Signup</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Signup</button>
+    </form>
+</body>
+</html>
